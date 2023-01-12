@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра Найди пару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="level">
+        <h1 class="level__title">Выбери сложность</h1>
+        <div class="level-item">
+            <div class="level__item level-item_light">1</div>
+            <div class="level__item level-item_normal">2</div>
+            <div class="level__item level-item_hard">3</div>
+        </div>
+        <button class="level__btn">Старт</button>
+    </div>
+    <script>
+        const levelItem = document.querySelectorAll('.level__item');
+        const light = document.querySelector(".level-item_light");
+        const normal = document.querySelector(".level-item_normal");
+        const hard = document.querySelector(".level-item_hard");
+        const button = document.querySelector(".level__btn");
+
+        button.addEventListener('click', () => {
+            location.href = 'game.html';
+        });
+
+    </script>
+</body>
+
+</html>
